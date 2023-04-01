@@ -6,28 +6,30 @@ Let us assume that a mathematical problem (or simply called bellow *task*) can b
 For example let us assume a portfolio from 500 financial assets with a Var-CoVar matrix S and mean values vector of the assets **μ**. Our task is to find a vector *w* with size 500, such that the quadratic form 
 
 <math xmlns="http://www.w3.org/1998/Math/MathML">
-  <mi>Q</mi>
-  <mo>=</mo>
-  <mfrac>
-    <mn>1</mn>
-    <mn>2</mn>
-  </mfrac>
-  <mo>&#x22C5;</mo>
-  <msup>
-    <mi>w</mi>
-    <mi>T</mi>
-  </msup>
-  <mo>&#x22C5;</mo>
-  <mi>S</mi>
-  <mo>&#x22C5;</mo>
-  <mi>w</mi>
-  <mo>-</mo>
-  <msup>
-    <mi>&#x03BC;</mi>
-    <mi>T</mi>
-  </msup>
-  <mo>&#x22C5;</mo>
-  <mi>w</mi>
+    <mrow>
+        <mi>Q</mi>
+        <mo>=</mo>
+        <mfrac>
+            <mn>1</mn>
+            <mn>2</mn>
+        </mfrac>
+        <mo>&#x22C5;</mo>
+        <msup>
+            <mi>w</mi>
+            <mi>T</mi>
+        </msup>
+        <mo>&#x22C5;</mo>
+        <mi>S</mi>
+        <mo>&#x22C5;</mo>
+        <mi>w</mi>
+        <mo>-</mo>
+        <msup>
+            <mi>&#x03BC;</mi>
+            <mi>T</mi>
+        </msup>
+        <mo>&#x22C5;</mo>
+        <mi>w</mi>
+    </mrow>
 </math>
 
  has minimal value under the constraints **μ**^T·**w** >= r and **1**^T·**w** = 1. The vector **w** can be encoded in a binary form with at most a sequence of 32000 binary elements (each value of the vector **w** is a 64 bit number, so we need 64·500 = 32000).
