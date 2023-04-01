@@ -5,7 +5,7 @@ The genetic algorithms or as it is more strictly defined in the specialized bibl
 Let us assume that a mathematical problem (or simply called bellow *task*) can be described mathematically with some operations on set of elements defined on an abstract field. If this field or structure in some general space has power not less than the *continuum* (or in other words is homeomorphism of the ℝ space) then it may be represented (encoded) with a binary sequence {0, 1} \[ISS\]. 
 For example let us assume a portfolio from 500 financial assets with a Var-CoVar matrix S and mean values vector of the assets **μ**. Our task is to find a vector *w* with size 500, such that the quadratic form 
 
-$$ Q = \frac{1}{2} \mathbf{w}^T \mathbf{S} \mathbf{w} - \boldsymbol{\mu}^T \mathbf{w} $$
+$$ \min_{\mathbf{w}} Q = \frac{1}{2} \mathbf{w}^T \mathbf{S} \mathbf{w} - \boldsymbol{\mu}^T \mathbf{w} $$
 
 
  has minimal value under the constraints **μ**^T·**w** >= r and **1**^T·**w** = 1. The vector **w** can be encoded in a binary form with at most a sequence of 32000 binary elements (each value of the vector **w** is a 64 bit number, so we need 64·500 = 32000).
