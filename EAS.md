@@ -14,4 +14,4 @@ In an ***evolution space*** we have a countered set of individuals represented b
 # References
 
 
-\[ISS\] Mathematical analysis, V. Ilin, V. Sadovnichi, Bl. Sendov, Science and art, 1979.
+\[ISS\] Mathematical analysis, V. Ilin, V. Sadovnichi, Bl. Sendov, Science and art, Sofia, 1979.
