@@ -5,43 +5,8 @@ The genetic algorithms or as it is more strictly defined in the specialized bibl
 Let us assume that a mathematical problem (or simply called bellow *task*) can be described mathematically with some operations on set of elements defined on an abstract field. If this field or structure in some general space has power not less than the *continuum* (or in other words is homeomorphism of the ℝ space) then it may be represented (encoded) with a binary sequence {0, 1} \[ISS\]. 
 For example let us assume a portfolio from 500 financial assets with a Var-CoVar matrix S and mean values vector of the assets **μ**. Our task is to find a vector *w* with size 500, such that the quadratic form 
 
-<math xmlns="http://www.w3.org/1998/Math/MathML">
-<mrow>
-  <mi>x</mi>
-  <mo>=</mo>
-  <mfrac>
-    <mrow>
-      <mrow>
-        <mo>-</mo>
-        <mi>b</mi>
-      </mrow>
-      <mo>&#xB1;<!--PLUS-MINUS SIGN--></mo>
-      <msqrt>
-        <mrow>
-          <msup>
-            <mi>b</mi>
-            <mn>2</mn>
-          </msup>
-          <mo>-</mo>
-          <mrow>
-            <mn>4</mn>
-            <mo>&#x2062;<!--INVISIBLE TIMES--></mo>
-            <mi>a</mi>
-            <mo>&#x2062;<!--INVISIBLE TIMES--></mo>
-            <mi>c</mi>
-          </mrow>
-        </mrow>
-      </msqrt>
-    </mrow>
-    <mrow>
-      <mn>2</mn>
-      <mo>&#x2062;<!--INVISIBLE TIMES--></mo>
-      <mi>a</mi>
-    </mrow>
-  </mfrac>
-</mrow>
-
-</math>
+When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
+$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
  has minimal value under the constraints **μ**^T·**w** >= r and **1**^T·**w** = 1. The vector **w** can be encoded in a binary form with at most a sequence of 32000 binary elements (each value of the vector **w** is a 64 bit number, so we need 64·500 = 32000).
 The sequence of elements {0, 1} is called *genotype* and the value of 64 bit sequence of the genotype is called *allele* (the index of the allele is called *locus*). The inverse operation, the *decrypted* or *decoded* form of the sequence {0, 1} is called *phenotype* (in the case above this is the vector **w**).
