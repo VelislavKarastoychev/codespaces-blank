@@ -10,8 +10,12 @@ For example let us assume a portfolio from 500 financial assets with a Var-CoVar
         <mi>Q</mi>
         <mo>=</mo>
         <mfrac>
-            <mn>1</mn>
-            <mn>2</mn>
+            <mrow>
+                <mn>1</mn>
+            </mrow>
+            <mrow>
+                <mn>2</mn>
+            </mrow>
         </mfrac>
         <mo>&#x22C5;</mo>
         <msup>
