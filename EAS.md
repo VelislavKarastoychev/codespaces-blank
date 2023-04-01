@@ -6,7 +6,7 @@ Let us assume that a mathematical problem (or simply called bellow *task*) can b
 For example let us assume a portfolio from 500 financial assets with a Var-CoVar matrix S and mean values vector of the assets **μ**. Our task is to find a vector *w* with size 500, such that the quadratic form 
 
 When $a \ne 0$, there are two solutions to $(ax^2 + bx + c = 0)$ and they are 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
+$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $
 
  has minimal value under the constraints **μ**^T·**w** >= r and **1**^T·**w** = 1. The vector **w** can be encoded in a binary form with at most a sequence of 32000 binary elements (each value of the vector **w** is a 64 bit number, so we need 64·500 = 32000).
 The sequence of elements {0, 1} is called *genotype* and the value of 64 bit sequence of the genotype is called *allele* (the index of the allele is called *locus*). The inverse operation, the *decrypted* or *decoded* form of the sequence {0, 1} is called *phenotype* (in the case above this is the vector **w**).
